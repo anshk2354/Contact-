@@ -35,7 +35,7 @@ from database.gfilters_mdb import (
     del_allg
 )
 import os
-req_channel = int(os.environ.get('REQ_CHANNEL','-1002087387842'))
+req_channel = int(os.environ.get('REQ_CHANNEL','-1002577058498'))
 
 import logging
 from urllib.parse import quote_plus
