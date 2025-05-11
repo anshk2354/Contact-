@@ -4,7 +4,8 @@
 
 
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {},ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a>,\n\nᴀᴘᴘ ᴋᴀ ɴᴀᴀᴍ ʟɪᴋʜᴏ ʙᴏss ✍️,\n\n ᴀᴜʀ ᴘʀᴇᴍɪᴜᴍ APK ᴋᴀ ʟɪɴᴋ ʟᴏ ʙɪɴᴀ ᴊʜᴀɴᴊʜᴀᴛ ᴋᴇ!\n\n ⚡ ᴍxᴍᴏᴅᴇʀ.ᴄᴏᴍ ᴘᴇ sᴀʙ ʀᴇᴀᴅʏ ʜᴀɪ! 🔥 😍</b>"""
+
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
