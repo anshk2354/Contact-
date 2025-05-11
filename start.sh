@@ -5,12 +5,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/mxmoder/Clone-imd-ansh.git /Clone-imd-ansh 
+  git clone https://github.com/anshk2354/Contact- /Contact- 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Clone-imd-ansh 
+  git clone $UPSTREAM_REPO /Contact- 
 fi
-cd /Clone-imd-ansh 
+cd /Contact- 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
