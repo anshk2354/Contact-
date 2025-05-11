@@ -74,7 +74,7 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. \n\nTʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nJᴏɪɴ ᴀɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ - https://t.me/+PLWg_EtJG8UwN2Y1</b>")
+            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search}. \n\nTʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nJᴏɪɴ ᴀɴᴅ Sᴇᴀʀᴄʜ Hᴇʀᴇ - https://t.me/mxmoder</b>")
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def handlePrivate(client, message):
@@ -89,8 +89,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/+PLWg_EtJG8UwN2Y1>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/+PLWg_EtJG8UwN2Y1")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/mxmoder>mod apk ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/mxmoder")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -347,7 +347,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ mod apk ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -1200,7 +1200,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Request Movie Group", url="https://t.me/+PLWg_EtJG8UwN2Y1")
+                 InlineKeyboardButton("Request Movie Group", url="https://t.me/mxmoder_support")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1225,7 +1225,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Request Movie Group", url="https://t.me/+PLWg_EtJG8UwN2Y1")
+                 InlineKeyboardButton("Request Movie Group", url="https://t.me/mxmoder_support")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1318,7 +1318,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton(' Request Movie Group', url='https://t.me/+PLWg_EtJG8UwN2Y1')
+                    InlineKeyboardButton(' Request Movie Group', url='https://t.me/mxmoder_support')
                 ],[
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
                   ]]
@@ -1978,9 +1978,11 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_sticker("CAACAgQAAxkBAAELX9hlyKPy4b52cxrdM3RMa1emV_qvkwACbg8AAuHqsVDaMQeY6CcRojQE",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/hd_telegram_movies")]]) 
+            m=await message.reply_text("✅ **Aapka message send ho gaya hai.\nPlease wait... Kuch hi der mein aap ko Mod APK mil jaega.\n\nYour message has been sent.\nYou will receive the mod app in a few minutes**",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎 mod apk', url=f"https://t.me/mxmoder")]]) 
             )
+            await asyncio.sleep(10)
+            await m.delete()
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1997,11 +1999,6 @@ async def auto_filter(client, msg, spoll=False):
             files, offset, total_results = await get_search_results(message.chat.id ,search, offset=0, filter=True)
             settings = await get_settings(message.chat.id)
             if not files:
-                await client.send_message(req_channel, f"#REQUESTERS_LOGS \n\n**CONTENT NAME:**`{search}`\n**REQUESTED BY :**{message.from_user.first_name}\n**USER ID :**{message.from_user.id}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌺 Mark as Done 🏵️", callback_data="close_data")]]))
-                l = await message.reply_text(text=f"**Hello {message.from_user.first_name}😎. \n\n`{search}` Movie Not Found in Database\n\n<a href='https://t.me/mxmoder_video_download/7'>हमें लगता है आपने spelling mistake किया है please search Google movie name</a>\n\nYour Request movie send admin will be uploaded some time please wait\n\n Join a 𝗨𝗣𝗟𝗢𝗔𝗗 𝗡𝗢𝗧𝗜𝗙𝗬 channel to get movie upload notifications You.\n\n   ❣️ᴛʜᴀɴᴋ ʏᴏᴜ {message.from_user.first_name} ❣️**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('𝐔𝐩𝐥𝐨𝐚𝐝 𝐍𝐨𝐭𝐢𝐟𝐲', url='https://t.me/+8GhQEuwpnfg1OGQ1'),
-                                                                                                                                                                                                                                                                                                                                                                                                                                       InlineKeyboardButton('𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐌𝐨𝐯𝐢𝐞', url='https://telegram.me/mxmoder_bot')]]))
-                await asyncio.sleep(20)
-                await l.delete()
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
                 else:
@@ -2013,9 +2010,11 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_sticker("CAACAgQAAxkBAAELX9hlyKPy4b52cxrdM3RMa1emV_qvkwACbg8AAuHqsVDaMQeY6CcRojQE",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/hd_telegram_movies")]]) 
+        m=await message.reply_text("✅ **Aapka message send ho gaya hai.\nPlease wait... Kuch hi der mein aap ko Mod APK mil jaega.\n\nYour message has been sent.\nYou will receive the mod app in a few minutes**",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/mxmoder")]]) 
             )
+        await asyncio.sleep(10)
+        await m.delete()
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
